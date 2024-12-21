@@ -21,7 +21,7 @@
 **以上帖可能有一定数学和前置知识门槛，可先看以下文章对新手更加友好的文章**：
 
 [hzw的diffusion入门系列](https://zhuanlan.zhihu.com/p/9140786426)
-究极入门友好，可先阅读这个，弄清ddpm的大概流程，再看其他的高清数学细节
+究极入门友好，可先阅读这个，弄清ddpm的大概流程，再看其他教程学习更深入的细节
 
 [苏剑林苏神的生成扩散模型漫谈系列博客](https://www.kexue.fm/archives/9119)
 可在主页搜关键词“生成扩散模型漫谈”阅读完整系列）
@@ -76,6 +76,7 @@ diffusion首次在图像生成领域战胜GAN
 Score-based model
 
 [知乎一篇高质量讲解](https://www.zhihu.com/question/613579202/answer/3310826408)
+
 [yang song本人亲自讲解](https://www.bilibili.com/video/BV1Do4y16767/)
 
 

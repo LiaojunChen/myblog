@@ -1,7 +1,7 @@
 site_name: 嘉然今天赶DDL
 
 theme:
-    name: bootstrap
+    name: material
     
 nav:
 - Home: index.md
