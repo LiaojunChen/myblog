@@ -1,0 +1,9 @@
+site_name: 嘉然今天赶DDL
+
+theme:
+    name: bootstrap
+    
+nav:
+- Home: index.md
+- Blog:
+    - Diffusion入门资源整理(持续更新ing): Diffusion入门资源整理(持续更新ing).md
