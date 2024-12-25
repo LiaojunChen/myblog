@@ -59,6 +59,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#diy" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -268,6 +273,8 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
@@ -308,6 +315,8 @@
   
   
   
+    
+  
   
 </nav>
                   </div>
@@ -322,12 +331,44 @@
                   
 
 
-  <h1>DIY键盘新手入门指南</h1>
-
 <blockquote>
 <p>写本文的契机来源于本人在构思电工实习大作业时，突发奇想想做一个键盘diy，但查了资料发现网上对于diy键盘的全流程缺乏一个系统的文字整理，便写下本文。本文一大特色是目前网上关于键盘diy方面，涉及原理的讲解较少，本文会涉及相关分析，如果你对键盘的电工原理感兴趣的话，这篇文章可能会对你有帮助:）</p>
-<p>目前本文仅停留在纸上谈兵阶段，等我之后有空尝试攒一个出来后，会根据实操经验进行更新</p>
+<p>另外文章尚不完善，期末周结束后更完。</p>
+<p>目前本文仅停留在纸上谈兵阶段，主要工作就是把参考资料里的视频整理成文字。等我之后有空尝试攒一个出来后，会根据实操经验进行更新。</p>
 </blockquote>
+<h1 id="diy">如何从零DIY一个键盘</h1>
+<p>DIY一个键盘的大致流程包括：按键布局排列—&gt;绘制原理图及PCB图—&gt;编写固件—&gt;焊接。下文会以该流程的形式展开讲解</p>
+<h1 id="_1">按键布局排列</h1>
+<p>在DIY键盘的最开始，我们需要明确自己的需求，确定好自己需要什么样的键盘</p>
+<p>然后在keyboard-layout-editor.com中，编辑好自己想要的键盘形式，其中关于操作：</p>
+<p>1 Preset 预设，即预设好的模板
+ 2 Add Key-加一个键 
+ 3 Delete Keys-删除按键 
+ 5 Properties 键盘属性 设置键帽的高宽，颜色，文字等 
+ 7 Top Legend-Center-Bottom Legend 输入文字这仨主要是在第一栏可以输入在某一键帽上的文字，文字的位置分上中下三层 
+ 6 RAW DATA 储存键盘信息，相当于是键盘的文字表示形式。</p>
+<p>编辑好后，在“raw-data”中复制好对应信息，粘贴在builder.swillkb.com的Plate Layout中生成CAD</p>
+<p>一些选项：</p>
+<p>Switch Type 轴体开关的类型，无特殊需求MX即可</p>
+<p>Stabilizer Type 卫星轴类型，一般Cherry Only</p>
+<p>上述步骤完成后，点击Draw My CAD，这时候页面会自动跳转到 CAD Output栏目里。配列就生成了，定位板右上角的三个按钮分别可以下载SVG格式的文件、DXF格式的文件、EPS格式的文件。</p>
+<p>点击DXF按钮，即可下载文件你，之后用CAD软件（可AutoCAD）打开。按照你自己的需求修改CAD图细节即可，如果不太清楚该画出什么样，可找网上模板参考参考。</p>
+<h1 id="pcb">绘制原理图及PCB图</h1>
+<p>这部分最好的办法就是照着一个教学视频一比一的复制。跟着一步一步来是最清晰的。</p>
+<p>这里推荐浮灵君的：<a href="https://www.bilibili.com/video/BV1oF411s7oB">「浮灵教你做键盘」客制化键盘DIY教程 —贰其上— 原理图绘制 立创EDA</a></p>
+<p>主要他提供了现成画好的模板库，对于新手来说就只需要搭积木一样即可，很方便。</p>
+<h1 id="_2">编写固件</h1>
+<p>常用qmk编写实现。qmk入门有一定门槛，建议先看视频打一下基础</p>
+<p><a href="https://www.bilibili.com/video/BV1yA411R7Ky">QMK教程</a></p>
+<h1 id="_3">焊接</h1>
+<p>这部分没什么说的，照着pcb以及原理图焊即可。</p>
+<blockquote>
+<p>待更新：加图例，QMK部分增加教程</p>
+</blockquote>
+<p><strong>参考：</strong></p>
+<p><a href="https://www.bilibili.com/video/BV1A14y1n7Yo/">【开源】自定义小键盘制作全流程</a></p>
+<p><a href="https://www.bilibili.com/video/BV16341147K7">【零基础】客制化键盘DIY系列教程</a>及其文字稿</p>
+<p>感谢以上大佬的付出。</p>
 
 
 
